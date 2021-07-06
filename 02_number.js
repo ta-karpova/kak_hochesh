@@ -87,11 +87,11 @@
 // --------------------------------------------------
 
 //     вывести случайное число в заданном диапазоне и округлить куда-нибудь
-function gerRamdomBetween(min, max){
+function getRandomBetween(min, max){
 //    return Math.random()*(max - min) + min
     return Math.floor(Math.random()*(max - min + 1) + min) // из-за floor теряется 1 значение, поэтому +1
 }
-console.log(gerRamdomBetween(10, 42))
+console.log(getRandomBetween(10, 42))
 
 
 
