@@ -64,12 +64,13 @@
 
 function getFactorial(val){
     let accumulator = 1
-    for (let i = 1; i < val; i++) {
-        accumulator = accumulator * (i+1)
+    for (let i = 1; i <= val; i++) {
+        accumulator = accumulator * i
     }
     return accumulator
 }
 console.log(getFactorial(6))
+
 
 
 
