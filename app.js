@@ -61,15 +61,15 @@
 
 // если ф-я от одного параметра, () можно не писать
 
-
-function getFactorial(val){
-    let accumulator = 1
-    for (let i = 1; i <= val; i++) {
-        accumulator = accumulator * i
-    }
-    return accumulator
-}
-console.log(getFactorial(6))
+// факториал
+// function getFactorial(val){
+//     let accumulator = 1
+//     for (let i = 1; i <= val; i++) {
+//         accumulator = accumulator * i
+//     }
+//     return accumulator
+// }
+// console.log(getFactorial(6))
 
 
 
