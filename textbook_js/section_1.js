@@ -350,6 +350,101 @@
 // while (i++ < 5) alert( i ) // выведет 1-5
 // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+// Задача 4
+// for (let i = 2; i <= 10; i++) {
+//     if (i % 2 !== 0) continue 
+//     alert (i)
+// }
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+// Задача 5
+// let i = 0
+// white (i < 3) {
+//     alert( `number ${i}!` )
+//     i++
+// }
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+// Задача 6 
+// let val
+// do {
+//     val = prompt ('Введите число', '')
+// } while (val <= 100 && val)
+//  Цикл сначала выполняет тело, затем проверяет условие
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+// НЕТ. Задача 7 - простые числа от 2 до range
+// let range = 10
+// let decom = 2
+// for (let val = 2; val <= range; val++) {
+//     while (decom < val) {
+//         if (val % decom != 0) {
+//             alert (val)
+//         }
+//         decom++
+//     }
+// }  
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+// =====================================
+// 14. Конструкция "switch"
+// =====================================
+// witch(x) {
+//     case 'value1':  // if (x === 'value1')
+//       ...
+//       [break]
+
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+// Задача 1 - Напишите "if", аналогичный "switch"
+// let browser 
+// if (browser === 'Edge') {
+//     alert ("You've got the Edge!")
+// } else if (browser === 'Chrome') { // можно было через ||
+//     alert ('Okay we support these browsers too' )
+// } else if (browser === 'Firefox') {
+//     alert ('Okay we support these browsers too' )
+// } else if (browser === 'Safari') {
+//     alert ('Okay we support these browsers too' )
+// } else if (browser === 'Opera') {
+//     alert ('Okay we support these browsers too' )
+// } else {
+//     alert( 'We hope that this page looks ok!' )
+// }
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+// Задача 2
+// const number = +prompt('Введите число между 0 и 3', '')
+
+// switch (number) {
+//     case 0:
+//         alert('Вы ввели число 0')
+//         break
+    
+//     case 1:
+//         alert('Вы ввели число 1')
+//         break    
+
+//     case 2: //if (number === 2 || number === 3)
+//     case 3:
+//         alert('Вы ввели число 2, а может и 3')
+//         break
+// }
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+// =====================================
+// 15. Функции
+// =====================================
+
+
+
+
+
+
 
 
 
