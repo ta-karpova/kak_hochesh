@@ -158,10 +158,67 @@
 // alert(rabbit.name); // Белый кролик
 // alert(rabbit.earLength); // 10
 
+// ------------------------------
+// Дата выпуска и имя автора
+// -----------------------------------
 
+class Article {
+  authorName = 'Альберт';
+  releaseDate = '00.00.0000';
+  textArticle = '';
 
+  takeAuthorName () {
+    return this.authorName;
+  }
+  setAuthorName(authorName) {
+    this.authorName = authorName
+  }
 
+}
 
+class ArticleSport extends Article {
+  state = {
+    city: '', 
+    sport: ''
+  }
+  constructor(city, sport) {
+    super()
+    this.state = {
+      city,
+      sport
+    }
+  }
+  getCity() {
+    return this.state.city
+  }
+  getSport() {
+    return this.state.sport
+  }
+  setCity(city) {
+    this.state.city = city
+  }
+  setSport(sport) {
+    this.state.sport = sport
+  }
+}
 
+class ArticlePolitics extends Article {
+
+}
+
+// class ArticleAnimals extends Article {
+
+// }
+
+let articleSport = new ArticleSport('Москва', 'Футбол');
+console.log(articleSport.takeAuthorName())
+articleSport.setAuthorName('Что-нибудь')
+console.log(articleSport.takeAuthorName())
+console.log(articleSport.getCity())
+console.log(articleSport.getSport())
+articleSport.setCity('Саратов')
+console.log(articleSport.getCity())
+// let articlePolitics = new ArticlePolitics;
+// let articleAnimals = new ArticleAnimals;
 
 
