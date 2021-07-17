@@ -162,10 +162,81 @@
 // Дата выпуска и имя автора
 // -----------------------------------
 
+// class Article {
+//   authorName = 'Имя';
+//   releaseDate = '00.00.0000';
+//   textArticle = '';
+
+//   takeAuthorName () {
+//     return this.authorName;
+//   }
+//   setAuthorName(authorName) {
+//     this.authorName = authorName
+//   }
+
+//   takeReleaseDate () {
+//     return this.releaseDate;
+//   }
+//   setAuthorName(releaseDate) {
+//     this.releaseDate = releaseDate
+//   }
+// }
+
+// class ArticleSport extends Article {
+//   state = {
+//     city: '', 
+//     sport: ''
+//   }
+//   constructor(city, sport) {
+//     super()
+//     this.state = {
+//       city,
+//       sport
+//     }
+//   }
+//   getCity() {
+//     return this.state.city
+//   }
+//   getSport() {
+//     return this.state.sport
+//   }
+//   setCity(city) {
+//     this.state.city = city
+//   }
+//   setSport(sport) {
+//     this.state.sport = sport
+//   }
+// }
+
+// // class ArticlePolitics extends Article {
+
+// // }
+
+// // class ArticleAnimals extends Article {
+
+// // }
+
+// let articleSport = new ArticleSport('Москва', 'Футбол');
+// console.log(articleSport.takeAuthorName('Ольга'))
+// articleSport.setAuthorName('Михаил')
+// //console.log(articleSport.takeAuthorName())
+// console.log(articleSport.getCity())
+// console.log(articleSport.getSport())
+// articleSport.setCity('Саратов')
+// console.log(articleSport.getCity())
+
+// let articlePolitics = new ArticlePolitics()
+// console.log(articlePolitics.takeAuthorName())
+// articlePolitics.setAuthorName('Олег')
+
+// // let articlePolitics = new ArticlePolitics;
+// // let articleAnimals = new ArticleAnimals;
+
+
 class Article {
   authorName = 'Альберт';
   releaseDate = '00.00.0000';
-  textArticle = '';
+  textArticle = 'Текст статьи';
 
   takeAuthorName () {
     return this.authorName;
@@ -174,6 +245,19 @@ class Article {
     this.authorName = authorName
   }
 
+  takeReleaseDate () {
+    return this.releaseDate;
+  }
+  setReleaseDate(releaseDate) {
+    this.releaseDate = releaseDate
+  }
+
+  takeTextArticle () {
+    return this.textArticle;
+  }
+  setTextArticle(textArticle) {
+    this.textArticle = textArticle
+  }
 }
 
 class ArticleSport extends Article {
@@ -203,22 +287,97 @@ class ArticleSport extends Article {
 }
 
 class ArticlePolitics extends Article {
-
+  state = {
+    country: '' 
+  }
+  constructor(country) {
+    super()
+    this.state = {
+      country
+    }
+  }
+  getCountry() {
+    return this.state.country
+  }
+  setCountry(country) {
+    this.state.country = country
+  }
 }
 
-// class ArticleAnimals extends Article {
+ class ArticleAnimals extends Article {
+  state = {
+    animal: '' 
+  }
+  constructor(animal) {
+    super()
+    this.state = {
+      animal
+    }
+  }
+  getAnimal() {
+    return this.state.animal
+  }
+  setAnimal(animal) {
+    this.state.animal = animal
+  }
+ }
 
-// }
-
+// Статья про спорт 
 let articleSport = new ArticleSport('Москва', 'Футбол');
-console.log(articleSport.takeAuthorName())
-articleSport.setAuthorName('Что-нибудь')
+//console.log(articleSport.takeAuthorName())
+
+articleSport.setAuthorName('Михаил')
 console.log(articleSport.takeAuthorName())
 console.log(articleSport.getCity())
 console.log(articleSport.getSport())
-articleSport.setCity('Саратов')
-console.log(articleSport.getCity())
+//articleSport.setCity('Саратов')
+//console.log(articleSport.getCity())
+articleSport.setReleaseDate('01.12.2019')
+console.log(articleSport.takeReleaseDate())
 // let articlePolitics = new ArticlePolitics;
 // let articleAnimals = new ArticleAnimals;
+articleSport.setTextArticle('Текст статьи про спорт')
+console.log(articleSport.takeTextArticle())
+console.log('-----')
+
+// Статья про политику
+let articlePolitics = new ArticlePolitics('США')
+
+articlePolitics.setAuthorName('Ольга')
+console.log(articlePolitics.takeAuthorName())
+
+console.log(articlePolitics.getCountry())
+
+articlePolitics.setReleaseDate('13.02.2021')
+console.log(articlePolitics.takeReleaseDate())
+
+articlePolitics.setTextArticle('Текст статьи про политику')
+console.log(articlePolitics.takeTextArticle())
+console.log('-----')
+
+// Статья про животных
+let articleAnimals = new ArticleAnimals('Тигр')
+
+articleAnimals.setAuthorName('Светлана')
+console.log(articleAnimals.takeAuthorName())
+
+console.log(articleAnimals.getAnimal())
+
+articleAnimals.setReleaseDate('26.07.2020')
+console.log(articleAnimals.takeReleaseDate())
+
+articleAnimals.setTextArticle('Текст статьи про животных')
+console.log(articleAnimals.takeTextArticle())
+
+
+
+
+
+
+
+
+
+
+
 
 
